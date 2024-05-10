@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR-Code-Generator</title>
+  <script src="https://unpkg.com/@bitjson/qr-code@1.0.2/dist/qr-code.js"></script>
+  <script src="../build/html2canvas.js"></script>
+  <link href="./style.css" rel="stylesheet"/> 
+</head>
+<body>
+  <qr-code id="qr-code" contents="https://lachsgeil.de" mask-x-to-y-ratio="0.8" position-center-color="#f3976b">
+    <img src="./logo_lachsgeil_fisch_lachs.png" slot="icon" height="100%" width="100%">
+  </qr-code>
+  <div class="centered-pls">
+    <input type="text" id="qr-input" placeholder="Hier bitte Text für QR-Code 🙂">
+    <button id="download-button">Herunterladen</button>
+  </div>
+  <script type="module" src="../build/main.js"></script>
+</body>
+</html>
